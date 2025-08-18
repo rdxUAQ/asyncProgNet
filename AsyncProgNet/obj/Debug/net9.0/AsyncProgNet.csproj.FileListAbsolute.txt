@@ -1,0 +1,14 @@
+C:\Users\Rodrex25\Project c#\repositories\asyncProgNet\AsyncProgNet\obj\Debug\net9.0\AsyncProgNet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rodrex25\Project c#\repositories\asyncProgNet\AsyncProgNet\obj\Debug\net9.0\AsyncProgNet.AssemblyInfoInputs.cache
+C:\Users\Rodrex25\Project c#\repositories\asyncProgNet\AsyncProgNet\obj\Debug\net9.0\AsyncProgNet.AssemblyInfo.cs
+C:\Users\Rodrex25\Project c#\repositories\asyncProgNet\AsyncProgNet\obj\Debug\net9.0\AsyncProgNet.csproj.CoreCompileInputs.cache
+C:\Users\Rodrex25\Project c#\repositories\asyncProgNet\AsyncProgNet\bin\Debug\net9.0\AsyncProgNet.exe
+C:\Users\Rodrex25\Project c#\repositories\asyncProgNet\AsyncProgNet\bin\Debug\net9.0\AsyncProgNet.deps.json
+C:\Users\Rodrex25\Project c#\repositories\asyncProgNet\AsyncProgNet\bin\Debug\net9.0\AsyncProgNet.runtimeconfig.json
+C:\Users\Rodrex25\Project c#\repositories\asyncProgNet\AsyncProgNet\bin\Debug\net9.0\AsyncProgNet.dll
+C:\Users\Rodrex25\Project c#\repositories\asyncProgNet\AsyncProgNet\bin\Debug\net9.0\AsyncProgNet.pdb
+C:\Users\Rodrex25\Project c#\repositories\asyncProgNet\AsyncProgNet\obj\Debug\net9.0\AsyncProgNet.dll
+C:\Users\Rodrex25\Project c#\repositories\asyncProgNet\AsyncProgNet\obj\Debug\net9.0\refint\AsyncProgNet.dll
+C:\Users\Rodrex25\Project c#\repositories\asyncProgNet\AsyncProgNet\obj\Debug\net9.0\AsyncProgNet.pdb
+C:\Users\Rodrex25\Project c#\repositories\asyncProgNet\AsyncProgNet\obj\Debug\net9.0\AsyncProgNet.genruntimeconfig.cache
+C:\Users\Rodrex25\Project c#\repositories\asyncProgNet\AsyncProgNet\obj\Debug\net9.0\ref\AsyncProgNet.dll
