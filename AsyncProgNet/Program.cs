@@ -8,70 +8,46 @@ namespace Program
         static void Main(string[] args)
         {
 
-
-            System.Console.WriteLine("------------------ Get Async Products ------------------");
-            List<Product> products = new List<Product>();
+            displayProdcutsAsync().GetAwaiter().GetResult();
 
 
-            try
-            {
-
-                products = getProductsAsync().GetAwaiter().GetResult();
-
-
-            }
-            catch (Exception ex)
-            {
-                System.Console.WriteLine(ex);
-
-            }
-
-            if (products.Any())
-            {
-                System.Console.WriteLine("--------------------------- Products catched ---------------------------\n");
-                foreach (Product p in products)
-                {
-                    System.Console.WriteLine("" + p.ToString() + "\n---------------------------");
-                }
-                return;
-            }
-            System.Console.WriteLine("Products empty error");
             
-           /* System.Console.WriteLine("------------------Single Thread----------------------");
 
-                    string projectRoot = System.IO.Path.GetFullPath(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", ".."));
-                    string filePath = System.IO.Path.Combine(projectRoot, "repo", "example.txt");
+            /* System.Console.WriteLine("------------------Single Thread----------------------");
 
-                    try
-                    {
+                     string projectRoot = System.IO.Path.GetFullPath(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", ".."));
+                     string filePath = System.IO.Path.Combine(projectRoot, "repo", "example.txt");
 
-                        SimulateDelay().GetAwaiter().GetResult();
+                     try
+                     {
 
-                        ReadFileAsync(filePath).GetAwaiter().GetResult();
+                         SimulateDelay().GetAwaiter().GetResult();
 
-                    }
-                    catch (Exception ex)
-                    {
-                        System.Console.WriteLine(ex);
+                         ReadFileAsync(filePath).GetAwaiter().GetResult();
 
-
-                    }
-
-                    //multiple task
-                    System.Console.WriteLine("------------------Multi Thread----------------------");
-
-                    try
-                    {
-
-                        Task.WaitAll(SimulateDelay(), ReadFileAsync(filePath));
-
-                    }
-                    catch (Exception ex)
-                    {
-                        System.Console.WriteLine(ex);
+                     }
+                     catch (Exception ex)
+                     {
+                         System.Console.WriteLine(ex);
 
 
-                    }*/
+                     }
+
+                     //multiple task
+                     System.Console.WriteLine("------------------Multi Thread----------------------");
+
+                     try
+                     {
+
+                         Task.WaitAll(SimulateDelay(), ReadFileAsync(filePath));
+
+                     }
+                     catch (Exception ex)
+                     {
+                         System.Console.WriteLine(ex);
+
+
+                     }*/
 
 
         }
@@ -105,7 +81,7 @@ namespace Program
         {
             System.Console.WriteLine("Getting products");
 
-            
+
 
             List<Product> products = new List<Product>();
 
@@ -118,11 +94,45 @@ namespace Program
                         "Product number " + i
                     );
                 products.Add(product);
-                System.Console.WriteLine("NEW Product added\nData:"+product.ToString()+"\n----------------------------");
+                System.Console.WriteLine("NEW Product added\nData:" + product.ToString() + "\n----------------------------");
             }
 
 
             return products;
+        }
+
+        public static async Task displayProdcutsAsync()
+        { 
+            System.Console.WriteLine("------------------ Get Async Products ------------------");
+            List<Product> products = new List<Product>();
+
+
+            try
+            {
+
+                products = await getProductsAsync();
+
+
+            }
+            catch (Exception ex)
+            {
+                System.Console.WriteLine(ex);
+
+            }
+
+            if (products.Any())
+            {
+                System.Console.WriteLine("--------------------------- Products catched ---------------------------\n");
+                foreach (Product p in products)
+                {
+                    System.Console.WriteLine("" + p.ToString() + "\n---------------------------");
+                }
+                return;
+            }
+            System.Console.WriteLine("Products empty error");
+
+
+            
         }
        
     }
