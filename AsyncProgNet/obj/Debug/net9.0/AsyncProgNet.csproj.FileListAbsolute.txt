@@ -13,3 +13,7 @@ C:\Users\Rodrex25\Project c#\repositories\asyncProgNet\AsyncProgNet\obj\Debug\ne
 C:\Users\Rodrex25\Project c#\repositories\asyncProgNet\AsyncProgNet\obj\Debug\net9.0\AsyncProgNet.genruntimeconfig.cache
 C:\Users\Rodrex25\Project c#\repositories\asyncProgNet\AsyncProgNet\obj\Debug\net9.0\ref\AsyncProgNet.dll
 C:\Users\Rodrex25\Project c#\repositories\asyncProgNet\AsyncProgNet\obj\Debug\net9.0\AsyncProgNet.sourcelink.json
+C:\Users\Rodrex25\Project c#\repositories\asyncProgNet\AsyncProgNet\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Rodrex25\Project c#\repositories\asyncProgNet\AsyncProgNet\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Rodrex25\Project c#\repositories\asyncProgNet\AsyncProgNet\obj\Debug\net9.0\AsyncProgNet.csproj.AssemblyReference.cache
+C:\Users\Rodrex25\Project c#\repositories\asyncProgNet\AsyncProgNet\obj\Debug\net9.0\AsyncPro.65A54E0E.Up2Date

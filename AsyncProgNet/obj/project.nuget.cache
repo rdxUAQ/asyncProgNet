@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "FMFzoIqN208=",
+  "dgSpecHash": "/TfgEA1UcUw=",
   "success": true,
   "projectFilePath": "C:\\Users\\Rodrex25\\Project c#\\repositories\\asyncProgNet\\AsyncProgNet\\AsyncProgNet.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Rodrex25\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.8\\microsoft.extensions.dependencyinjection.9.0.8.nupkg.sha512",
+    "C:\\Users\\Rodrex25\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.8\\microsoft.extensions.dependencyinjection.abstractions.9.0.8.nupkg.sha512"
+  ],
   "logs": []
 }

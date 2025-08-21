@@ -1,17 +1,40 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿
+using Program.Interfaces;
+using Program.Services;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Program
 {
     class Program
     {
+
         static void Main(string[] args)
         {
+            var builder = new ServiceCollection();
 
-            displayProdcutsAsync().GetAwaiter().GetResult();
+            builder.AddTransient<IDownloadService, DownloadService>();
+            builder.AddTransient<IProcessDataService, ProcessDataService>();
 
+            var provider = builder.BuildServiceProvider();
 
+            var reqService = provider.GetRequiredService<IDownloadService>();
+
+            System.Console.WriteLine("--------- Excercise 1 ----------");
+            reqService.DownloadFileAsync("Example").GetAwaiter().GetResult();
+            reqService.DownloadFilesAsync().GetAwaiter().GetResult();
+            System.Console.WriteLine("--------- Excercise 2 ----------");
+            var reqService2 = provider.GetRequiredService<IProcessDataService>();
+            reqService2.ProcessDataChunkAsync(20).GetAwaiter().GetResult();
+            reqService2.ProcessLargeDatasetAsync(20).GetAwaiter().GetResult();
             
+
+
+
+
+            /*fetchDataProductsAsync().GetAwaiter().GetResult();*/
+
+
+
 
             /* System.Console.WriteLine("------------------Single Thread----------------------");
 
@@ -102,7 +125,7 @@ namespace Program
         }
 
         public static async Task displayProdcutsAsync()
-        { 
+        {
             System.Console.WriteLine("------------------ Get Async Products ------------------");
             List<Product> products = new List<Product>();
 
@@ -131,8 +154,20 @@ namespace Program
             }
             System.Console.WriteLine("Products empty error");
 
+        }
 
-            
+        public static async Task fetchDataProductsAsync()
+        {
+            try
+            {
+                await Task.WhenAll(getProductsAsync(), displayProdcutsAsync());
+            }
+            catch (Exception ex)
+            { 
+                
+                System.Console.WriteLine(ex);
+
+            }
         }
        
     }
